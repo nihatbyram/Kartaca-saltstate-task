@@ -9,4 +9,31 @@ tek bir merkezde yönetmek için denemeler yaptım ancak hala olmadığı gibi T
 
 Yakın zamanda bu alanda Türkçe kaynak oluşturmayı hedefliyorum dersem yeridir.
 Gerekli çalışma alanımı oluşturdum ve Salt Projesini detaylı bir şekilde araştırmaya ve Dökümanları okumaya başladım.
+
 Kaynak: https://docs.saltproject.io/en/latest/contents.html
+
+
+## CentOS Stream 9 ve Ubuntu kurulumu yapıldı
+Kurulumun hemen ardından SaltStack'in depoları aşağıdaki gibi CentOs'a eklendi.
+
+```bash
+  sudo yum install -y epel-release
+  sudo yum install -y https://repo.saltstack.com/yum/redhat/salt-repo-latest-2.el7.noarch.rpm
+```
+
+ Minion kuruldu
+ ```bash
+  sudo yum install salt-minion
+ ```
+Minion Hizmeti enable edilip başlatıldı
+
+ ```bash
+ sudo systemctl enable salt-minion
+ sudo systemctl start salt-minion
+ ```
+Bu işlemlerin aynısı ubuntu sunucu için de uygulandı tek tek yazmayalım tekrardan.
+
+![maxresdefault](https://github.com/nihatbyram/Kartaca-saltstate-task/assets/30882402/b96db290-b501-4264-89cc-9cd4fe4034ee)
+
+Hemen ardından, master sunucuyu kurup mininonlarda Master sunucunun ip adresi eklendi.
+
