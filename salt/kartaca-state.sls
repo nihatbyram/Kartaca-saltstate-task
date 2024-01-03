@@ -115,7 +115,7 @@ install_mtr:
     - name: mtr  # RedHat/CentOS için MTR paket adı
 {% endif %}
 
-# HashiCorp Deposu Kurulumu
+# HashiCorp Deposu Kurulumu ve Terraform Sürüm Yükleme
 {% if grains['os_family'] == 'Debian' %}
 install_hashicorp_repo:
   cmd.run:
@@ -125,13 +125,28 @@ install_hashicorp_repo:
         gpg --no-default-keyring --keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg --fingerprint
         echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
         sudo apt update
+
+install_terraform:
+  pkg.installed:
+    - name: terraform
+    - version: 1:1.6.4
+    - refresh: True
+
 {% elif grains['os_family'] == 'RedHat' %}
 install_hashicorp_repo:
   cmd.run:
     - name: |
         wget -O- https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo | sudo tee /etc/yum.repos.d/hashicorp.repo
         sudo yum makecache
+
+install_terraform:
+  pkg.installed:
+    - name: terraform
+    - version: 1.6.4
+    - refresh: True
+
 {% endif %}
+
 
 # IP Adres Blokları ve Host Ekleme
 {% set ip_block = '192.168.168.128/28' %}
