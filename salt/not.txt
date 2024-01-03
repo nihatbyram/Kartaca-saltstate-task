@@ -1,2 +1,11 @@
 top.sls dosyası kullanılmadı.
 Klasör yapısı olmadığından init.sls de bulunmuyor.
+HashiCorp repolarında yaşanan bir problemden dolayı tearraform 1.6.4 versiyonunu sunucularıma https://releases.hashicorp.com/terraform/1.6.4/ adresinden alıp kurdum.
+Ancak özellikle stackoverflow gibi platformlardaki gibi kurulum yapan kodları ekledim. 
+Yani?
+#
+// install_terraform:
+//  pkg.installed:
+//    - name: terraform
+//    - version: 1:1.6.4
+olarak state dosyasına eklendi...
