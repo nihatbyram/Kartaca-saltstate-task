@@ -131,34 +131,11 @@ Bende çıkan hataların sizde çıkmamasını temenni ediyorum...
 
 
 Bu arada nusret mesajıma neden cevap vermedi sizce?
+# 
 ![nusret](https://github.com/nihatbyram/Kartaca-saltstate-task/assets/30882402/6298e544-ef04-4113-a8f3-7c0aabf1a481)
 
+#
+Tüm success ve faillere rağmen benim karizma (temsili)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+https://www.instagram.com/reel/C1m8VnnIZhy/?igsh=Y2tyY2g3ejc1NWZo
