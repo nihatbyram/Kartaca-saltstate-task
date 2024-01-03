@@ -1,5 +1,8 @@
 # Kartaca-saltstate-task
 Kartaca SaltStack ile Hedef Makina Yönetim / Otomasyon / Konfigürasyonu
+
+## Görev mail içerik [linki](https://kartaca.com/stajyer-sistem-yoneticisi-goreviniz/) 
+
 ## Yapay Zeka ve Dökümantasyon desteği alınmıştır.
 # NOT: Görev esnasında 8 Ocak 2024 tarihine kadar bu repoda her güncelleme yapıldığında, ironilere ve yorumlara yer verilecektir.
 Öncelikle SaltStack ile tanıştığımda aşırı hoşuma gitmişti ufak çapta local ortamda sanal sunucuları 
