@@ -9,3 +9,4 @@ Yani?
 //    - name: terraform
 //    - version: 1:1.6.4
 olarak state dosyasına eklendi...
+Ek olarak terraform'un 1.6.4 versiyonunu yukardaki adresten indirip zipten çıkarıp çalıştıran .sls dosyasını da yapabilirdik ama tek state dosyası ollduğundan bu işlemi gerçekleştirmedim.
