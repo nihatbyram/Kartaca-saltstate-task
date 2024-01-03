@@ -1,0 +1,2 @@
+top.sls dosyası kullanılmadı.
+Klasör yapısı olmadığından init.sls de bulunmuyor.
