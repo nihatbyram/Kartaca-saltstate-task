@@ -1,5 +1,6 @@
 # Kartaca-saltstate-task
 Kartaca SaltStack ile Hedef Makina Yönetim / Otomasyon / Konfigürasyonu
+## Yapay Zeka ve Dökümantasyon desteği alınmıştır.
 # NOT: Görev esnasında 8 Ocak 2024 tarihine kadar bu repoda her güncelleme yapıldığında, ironilere ve yorumlara yer verilecektir.
 Öncelikle SaltStack ile tanıştığımda aşırı hoşuma gitmişti ufak çapta local ortamda sanal sunucuları 
 tek bir merkezde yönetmek için denemeler yaptım ancak hala olmadığı gibi Türkçe kaynakta zorlandığımdan bıraktım ama hep aklımın bir köşesindeydi.
