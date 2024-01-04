@@ -31,12 +31,17 @@ kartaca_sudo_privileges:
   file.managed:
     - name: /etc/sudoers.d/kartaca
     - contents: |
-        kartaca ALL=(ALL) NOPASSWD: /usr/bin/apt, /usr/bin/yum
+        {% if grains['os_family'] == 'Debian' %}
+        kartaca ALL=(ALL) NOPASSWD: /usr/bin/apt
+        {% elif grains['os_family'] == 'RedHat' %}
+        kartaca ALL=(ALL) NOPASSWD: /usr/bin/yum
+        {% endif %}
         kartaca ALL=(ALL) ALL
-    - mode: 440
+    - mode: '440'
     - require:
       - user: kartaca
       - cmd: kartaca_password
+
 
 # Zaman Dilimi Ayarı
 Europe/Istanbul:
