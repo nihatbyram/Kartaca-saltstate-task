@@ -3,6 +3,7 @@ users:
     kartaca_password: 'kartaca2023'
     #kartaca2023 parolasını şifrelemek daha sağlıklı olurdu. Böyle bir istek olmadığı için parola direktt eklendi.
 mysql:
+  server: 'UBUNTU_MYSQL_IP' 
   database: 'MYSQL_VERITABANI'
   user: 'MYSQL_KULLANICI'
   password: 'MYSQL_ŞİFRE'
