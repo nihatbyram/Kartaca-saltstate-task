@@ -1,3 +1,8 @@
+
+![kartaca](https://github.com/nihatbyram/Kartaca-saltstate-task/assets/30882402/77b0beb5-69fb-4a08-8538-49a320a399d9)
+
+
+
 # Kartaca-saltstate-task
 Kartaca SaltStack ile Hedef Makina Yönetim / Otomasyon / Konfigürasyonu
 
